@@ -39,10 +39,52 @@ print(Prediction)
 Accuracy = Model.score(X_test,Y_test)
 
 #------Graph
-# 
 plt.plot(X_Train,Model.predict(X_Train),color = 'green')
 
 plt.show()
+
 print(Accuracy)
 
 #____________Done
+
+#-------------------TheilSen Regression
+
+# from sklearn.linear_model import TheilSenRegressor
+
+# Model = TheilSenRegressor()
+# Model.fit(X_Train,Y_Train)
+
+# Prediction = Model.predict(X_test)
+
+# Accuracy = Model.score(X_test,Y_test)
+
+# print(Accuracy)
+
+#__________________________Ransac Regression
+
+# from sklearn.linear_model import RANSACRegressor
+
+# Model = RANSACRegressor()
+
+# Model.fit(X_Train,Y_Train)
+
+# Prediction = Model.predict(X_test)
+
+# Accuracy = Model.score(X_test,Y_test)
+
+# print(Accuracy)
+
+#______________________HuberRegression
+
+#from sklearn.linear_model import HuberRegressor
+
+#Model = HuberRegressor()
+
+#Model.fit(X_Train,Y_Train)
+
+#Prediction = Model.predict(X_test)
+
+#Accuracy = Model.score(X_test,Y_test)
+
+#print(Accuracy)
+
